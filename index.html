@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=PT+Mono&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Calc Temperature </title>
+</head>
+<body>
+   <!--Ilove you-->
+
+<div id="divGeneral">
+    <h1>Temperature</h1>
+        <div id="fah" class="showDisplay"> 
+            <div id="div1f"> <p id="pTagFah">Fahrenheit:</p> <input type="number" name="Fahrenheit" id="f" placeholder="Type here..."></div>   
+            <div id="div2f"><h2>=</h2></div>
+            <div><p id="resultCelsius">Celsius:</p> </div>
+            <button id="buttonC" onclick="calculateToCelsius()">Calc</button> 
+        </div> 
+        
+        <div id="cel" class="hideDisplay"> 
+            <div id="div1c"> <p id="pTagCel">Celsius:</p> <input type="number" name="Celsius" id="c" placeholder="Type here..."></div>   
+            <div id="div2c"><h2>=</h2></div>
+            <div><p id="resultFahrenheit">Fahrenheit:</p> </div>
+            <button id="buttonF" onclick="calculateToFahrenheit()">Calc</button>
+        </div>
+        
+        <span id="changeButton" class="material-symbols-outlined fTOC" onclick="change()">change_circle</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

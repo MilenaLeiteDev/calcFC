@@ -1,0 +1,198 @@
+* {
+    box-sizing:border-box;
+    
+}
+body{
+    /* margin-bottom: 0;
+    padding: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-style: italic;
+    margin: auto;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,#021C35,#0D4063, #021C35) ;
+    /* #046968, #033649,#031634       #F7731C,#FE490E,#EF2C0C,#DB3202,#0D4063,#021C35,#F5AE01   */
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+    font-style: italic; 
+    font-size: 2.5em ;
+}
+
+
+#divGeneral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  #FE490E;
+    height: 500px;
+    width: 500px;
+    margin-top: 200px;
+    border: 3px solid#F5AE01;
+    
+}
+
+
+#fah, #cel{
+    align-items: center;
+    justify-items: center;
+    justify-content:space-between;
+}
+
+
+#div1f, #div1c{
+    margin: auto;
+    justify-content:space-between;
+    justify-items: center;
+    font-size: xx-large;
+}
+
+#f, #c{
+    font-size: x-large;
+}
+
+
+#div2f, #div2c{
+    margin: auto;
+    justify-content:space-between;
+    justify-items: center;
+}
+
+
+#resultCelsius, #resultFahrenheit{
+    margin: auto;
+    width: 100%;
+    justify-content:space-between;
+    justify-items: center;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+
+
+button{
+    height: 50px;
+    width: 100px;
+    margin: auto;
+     background-color: /*#0D4063*/#046968;  
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+#divGeneral span {
+    font-size: 45px;
+  }
+
+
+#divGeneral {
+    position: relative;
+  } 
+  
+#divGeneral span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+.showDisplay{
+    display: block;
+} 
+
+.hideDisplay{
+    display: none;
+}
+
+/*---------------------------------- Media Query--------------------------- */
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+
+    h1{
+        font-family: 'Orbitron', sans-serif;
+        font-weight: bolder;
+        font-style: italic; 
+        font-size: 1.5em ;
+    }
+
+    #divGeneral{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px  #FE490E;
+        height: 450px;
+        width: 350px;
+        margin-top: 200px; 
+        border: 3px solid#F5AE01;
+        
+    }
+
+    #div1f, #div1c{
+        margin: auto;
+        justify-content:space-between;
+        justify-items: center;
+        font-size: 1em;
+        font-weight: bold;
+
+    }
+
+    #resultCelsius, #resultFahrenheit{
+        margin: auto;
+        width: 100%;
+        justify-content:space-between;
+        justify-items: center;
+        margin-bottom: 20px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+}
+
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) and (max-width:768px) {
+
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) and (max-width:992px){
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) and (max-width:1200px){
+
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+
+}
+
